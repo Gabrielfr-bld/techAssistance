@@ -1,10 +1,10 @@
-import * as express from 'express';
+import express from 'express';
 
 class App {
   public app: express.Express;
 
   constructor() {
-    this.app = express();
+    this.app=express();
     this.config();
   }
   

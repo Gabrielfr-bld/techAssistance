@@ -10,7 +10,7 @@ module.exports = {
         primaryKey: true,
       },
       userName: {
-        type: Sequelize.Sequelize,
+        type: Sequelize.INTEGER,
         allowNull: false,
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       clientName: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
@@ -57,6 +57,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('assitances');
+    await queryInterface.dropTable('assistances');
   }
 };

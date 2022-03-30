@@ -9,7 +9,7 @@ module.exports = {
         allowNull: false,
         primaryKey: true,
       },
-      userName: {
+      userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUpdate: "CASCADE",
@@ -19,7 +19,7 @@ module.exports = {
           key: "id",
         }
       },
-      clientName: {
+      clientId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUpdate: "CASCADE",
@@ -29,12 +29,16 @@ module.exports = {
           key: "id",
         }
       },
+      title: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       initialDate: {
         type: Sequelize.DATE,
         allowNull: false,
       },
       deadline: {
-        type: Sequelize.DATE,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       finallyDate: {
@@ -53,6 +57,10 @@ module.exports = {
         type: Sequelize.BOOLEAN,
         allowNull: false,
       },
+      finishAssistance: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+      }
     })
   },
 

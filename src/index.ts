@@ -4,10 +4,10 @@ class App {
   public app: express.Express;
 
   constructor() {
-    this.app=express();
+    this.app = express();
     this.config();
   }
-  
+
   private config(): void {
     const acessControl: express.RequestHandler = (_req, res, next) => {
       res.header('Acess-Control-Allow-Origin', '*');
@@ -25,3 +25,5 @@ class App {
 }
 
 export { App };
+
+export const { app } = new App();

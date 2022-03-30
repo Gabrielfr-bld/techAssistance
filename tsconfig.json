@@ -4,15 +4,15 @@
     "module": "commonjs",
     "sourceMap": true,
     "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
     "skipLibCheck": true,
     "paths": {
       "*": [
@@ -20,4 +20,7 @@
       ]
     }
   },
+  "include": [
+    "src/**/*"
+  ]
 }

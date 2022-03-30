@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node .",
     "test": "jest",
+    "compose:up": "docker-compose up -d --build",
+    "compose:down": "docker-compose down --remove-orphans",
     "dev": "ts-node ./src/server.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },

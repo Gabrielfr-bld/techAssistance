@@ -8,6 +8,10 @@ class User extends Model {
 
   public typeUser: string;
 
+  public birthDate: Date;
+
+  public phone: string;
+
   public email: string;
 
   public password: string;

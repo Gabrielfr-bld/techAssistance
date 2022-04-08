@@ -34,7 +34,7 @@ module.exports = {
         allowNull: false,
       },
       initialDate: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false,
       },
       deadline: {
@@ -42,7 +42,7 @@ module.exports = {
         allowNull: false,
       },
       finallyDate: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false,
       },
       description: {
